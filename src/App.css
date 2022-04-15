@@ -1,3 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes hrAnimation {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 30%;
+  }
+}
+
+@keyframes rotate1 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate2 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.refresh1 {
+  animation-name: rotate1;
+  animation-duration: 2s;
+}
+
+.refresh2 {
+  animation-name: rotate2;
+  animation-duration: 2s;
+}
+
+.author, .download{
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.refreshDownlowd {
+  left: 41%; right: 41%;
+}
+
+.refreshDownlowdSm {
+  left: 41%; right: 30%;
+}
+
+.hrAnimation {
+  border-width: 1px;
+  width: 30%;
+  opacity: .75;
+  background-color: #93c5fd;
+  border-color: #93c5fd;
+  border-radius: 50px;
+  margin: 20px 0;
+  animation-name: hrAnimation;
+  animation-duration: 1s;
+}
+
+.component {
+  width: 40rem;
+  min-width: fit-content;
+}
+
 .App {
   text-align: center;
 }
