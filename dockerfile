@@ -4,11 +4,11 @@ ENV NODE_ENV production
 WORKDIR /app
 # Cache and Install dependencies
 COPY package.json .
-RUN npm install --production
+RUN npm install 
 # Copy app files
 COPY . .
 # Build the app
-RUN npm build
+RUN npm run build
 
 # Bundle static assets with nginx
 FROM nginx:1.21.0-alpine as production
