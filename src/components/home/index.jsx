@@ -1,12 +1,12 @@
 import { useState, useEffect, useRef, useCallback } from "react";
 import { toPng } from "html-to-image";
 import { FiDownloadCloud } from "react-icons/fi";
-import { HiOutlineRefresh } from "react-icons/hi"
+import { HiOutlineRefresh } from "react-icons/hi";
 
 const axios = require("axios").default;
 
 function Home() {
-  const [quote, setQuote] = useState(false);
+  const [quote, setQuote] = useState({ id: 0, quote: "API Data not found" });
   const [reload, setRelaod] = useState(false);
 
   const quote_component = useRef();
@@ -18,6 +18,8 @@ function Home() {
     });
     if (res.status === 200) {
       setQuote(res.data);
+    } else {
+      setQuote({ id: 0, quote: "API Data not found" });
     }
   };
 
@@ -28,7 +30,7 @@ function Home() {
     toPng(quote_component.current, { cacheBust: true })
       .then((dataUrl) => {
         const link = document.createElement("a");
-        link.download = `quote-${quote.id+1}.png`;
+        link.download = `quote-${quote.id + 1}.png`;
         link.href = dataUrl;
         link.click();
       })
@@ -42,32 +44,35 @@ function Home() {
   }, []);
 
   return (
-    <div className="grid justify-center w-full sm:w-128 p-6 bg-sky-400 relative">
+    <div className="grid justify-center w-full sm:w-128 relative">
       <div
         ref={quote_component}
-        className="grid justify-items-center bg-white rounded-xl px-3 pt-4 pb-3 sm:py-5 sm:px-6 relative"
+        className="grid justify-items-center bg-gray-700 rounded-xl mx-5 px-3 pt-4 pb-3 sm:py-5 sm:px-10 relative"
       >
-        <h2 className="text-xs sm:text-sm font-semibold text-sky-600 mt-4 text-center uppercase tracking-widest">
+        <h2 className="text-xs sm:text-sm font-semibold text-lime-400 mt-4 text-center uppercase tracking-widest">
           Quote #{quote.id} - {quote.author}
         </h2>
         <hr className="hrAnimation" />
-        <p className="text-2xl text-gray-500 text-center mb-5">
+        <p className="text-2xl text-white text-center mb-5">
           "{quote.quote}"
         </p>
       </div>
-      <div className="grid justify-center bottom-0.5 w-full px-10 absolute">
+      <div className="grid justify-center -bottom-5 w-full px-10 absolute">
         <div className="flex gap-7">
           <button
             onClick={downloadPng}
-            className="text-center w-fit h-fit bg-sky-600 text-white p-3 text-xl rounded-full"
+            className="text-center w-fit h-fit text-white bg-lime-500 p-3 text-xl rounded-full"
           >
             <FiDownloadCloud />
           </button>
           <button
-            onClick={() => {get_quote(); setRelaod(!reload)}}
-            className="text-center w-fit h-fit bg-sky-600 text-white p-3 text-xl rounded-full"
+            onClick={() => {
+              get_quote();
+              setRelaod(!reload);
+            }}
+            className="text-center w-fit h-fit text-white bg-lime-500 p-3 text-xl rounded-full"
           >
-            <HiOutlineRefresh className={reload ? "refresh1":"refresh2"}/>
+            <HiOutlineRefresh className={reload ? "refresh1" : "refresh2"} />
           </button>
         </div>
       </div>

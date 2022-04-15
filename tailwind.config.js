@@ -10,7 +10,7 @@ module.exports = {
         'secondary': '#54fea9'
       },
       spacing: {
-        '128': '40rem',
+        '128': '34rem',
       }
     },
   },

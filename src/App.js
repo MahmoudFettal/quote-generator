@@ -3,7 +3,7 @@ import Home from './components/home';
 
 function App() {
   return (
-    <div className="w-screen h-screen bg-sky-400 grid place-items-center">
+    <div className="w-screen h-screen bg-lime-300 grid place-items-center">
       <Home />
     </div>
   );

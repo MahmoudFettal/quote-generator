@@ -56,17 +56,12 @@
   border-width: 1px;
   width: 30%;
   opacity: .75;
-  background-color: #93c5fd;
-  border-color: #93c5fd;
+  background-color: #a3e635;
+  border-color: #a3e635;
   border-radius: 50px;
   margin: 20px 0;
   animation-name: hrAnimation;
   animation-duration: 1s;
-}
-
-.component {
-  width: 40rem;
-  min-width: fit-content;
 }
 
 .App {
