@@ -1,6 +1,43 @@
-# Getting Started with Create React App
+![screenshot](https://user-images.githubusercontent.com/46266986/163868560-3abf6b83-8026-4c97-88c7-5f67b98a723c.jpeg)
+<h1>
+    <b>Quote Generator</b>
+</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p>
+   <a href="https://github.com/MahmoudFettal/Plants-Watch/blob/master/LICENSE">
+      <img alt="GitHub Licence" src="https://img.shields.io/github/license/MahmoudFettal/quote-generator?style=for-the-badge&label=License"/>
+   </a> 
+   <a href="https://github.com/MahmoudFettal/Plants-Watch/issues">
+      <img alt="GitHub issues" src="https://img.shields.io/github/issues/MahmoudFettal/quote-generatorh?style=for-the-badge&label=Issues"/>
+   </a> 
+   <a href="https://github.com/MahmoudFettal/Plants-Watch/network/members">
+      <img alt="GitHub forks" src="https://img.shields.io/github/forks/MahmoudFettal/quote-generator?style=for-the-badge&logo=github&label=Forks"/>
+   </a> 
+   <a href="https://github.com/MahmoudFettal/Weekly-Data-Projects/stargazers">
+      <img alt="GitHub stars" src="https://img.shields.io/github/stars/MahmoudFettal/quote-generator?style=for-the-badge&logo=github&label=Stars"/>
+   </a>
+<p>
+
+<h2><b>Tools</b></h2>
+<p>
+    <img src="https://img.shields.io/badge/react-038C7F?style=for-the-badge&logo=react&logoColor=white"/>
+    <img src="https://img.shields.io/badge/azure-038C7F?style=for-the-badge&logo=microsoftazure&logoColor=white"/>
+    <img src="https://img.shields.io/badge/fastapi-038C7F?style=for-the-badge&logo=fastapi&logoColor=white"/>
+    <img src="https://img.shields.io/badge/tailwindcss-038C7F?style=for-the-badge&logo=tailwindcss&logoColor=white"/>
+</p>
+
+<h2><b>Description</b></h2>
+<p>
+Welcome 👋👋 to quote generator 
+
+The app does what its name says it generates a random quote and displays it and also gives the user the option to download it, the app was made using react and tailwind for the frontend, and uses an Azure function to get the quotes data (during the creation of the app I used also fast API to test the app locally and you can find it in the [fast-quote-api](https://github.com/MahmoudFettal/quote-generator/tree/master/fast-quote-api) file).
+  
+The quotes were generated from a kaggle dateset and was cleaned using this [notebook](https://github.com/MahmoudFettal/quote-generator/blob/master/quotes-dataset/qoutes_cleaning.ipynb) .
+</p>
+
+<h2><b>Support</b></h2>
+
+**:thumbsup: Your support means a lot. Thank you for stars that keeps me motivated to share new ideas and do them fast.**
 
 ## Available Scripts
 
@@ -38,33 +75,3 @@ If you aren't satisfied with the build tool and configuration choices, you can `
 Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
