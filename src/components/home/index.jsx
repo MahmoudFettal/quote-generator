@@ -6,7 +6,7 @@ import { HiOutlineRefresh } from "react-icons/hi";
 const axios = require("axios").default;
 
 function Home() {
-  const [quote, setQuote] = useState({ id: 0, quote: "API Data not found" });
+  const [quote, setQuote] = useState({ id: 0, quote: "No data from API" });
   const [reload, setRelaod] = useState(false);
 
   const quote_component = useRef();
@@ -19,7 +19,10 @@ function Home() {
     if (res.status === 200) {
       setQuote(res.data);
     } else {
-      setQuote({ id: 0, quote: "API Data not found" });
+      setQuote({
+        id: 0,
+        quote: "No data from API",
+      });
     }
   };
 
@@ -44,17 +47,17 @@ function Home() {
   }, []);
 
   return (
-    <div className="grid justify-center w-full sm:w-128 relative">
+    <div className="grid justify-center w-full sm:w-128 px-5 back relative">
       <div
         ref={quote_component}
-        className="grid justify-items-center bg-white rounded-xl  px-3 pt-4 pb-3 sm:py-5 sm:px-10 drop-shadow-2xl"
+        className="grid justify-items-center bg-white rounded-xl  px-5 pt-4 pb-3 sm:py-5 sm:px-10 drop-shadow-2xl"
       >
-        <h2 className="text-sm sm:text-md font-bold text-green-800 mt-4 text-center uppercase tracking-widest">
-          Quote #{quote.id+1} - {quote.author}
+        <h2 className="text-xs sm:text-md font-bold text-green-800 mt-4 text-center uppercase tracking-widest">
+          Quote #{quote.id + 1} - {quote.author}
         </h2>
         <hr className="hrAnimation" />
-        <p className="text-2xl text-black text-center mb-4">
-          "{quote.quote}"
+        <p className="text-xl sm:text-2xl text-black text-center mb-4">
+          " {quote.quote} "
         </p>
       </div>
       <div className="grid justify-center -bottom-5 w-full px-10 absolute">
