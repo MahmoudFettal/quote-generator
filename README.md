@@ -5,16 +5,16 @@
 
 <p>
    <a href="https://github.com/MahmoudFettal/quote-generator/blob/master/LICENSE">
-      <img alt="GitHub Licence" src="https://img.shields.io/github/license/MahmoudFettal/quote-generator?style=for-the-badge&label=License"/>
+      <img alt="GitHub Licence" src="https://img.shields.io/github/license/MahmoudFettal/quote-generator?style=for-the-badge"/>
    </a> 
    <a href="https://github.com/MahmoudFettal/quote-generator/issues">
       <img alt="GitHub issues" src="https://img.shields.io/github/issues/MahmoudFettal/quote-generator?style=for-the-badge&label=Issues"/>
    </a> 
    <a href="https://github.com/MahmoudFettal/quote-generator/network/members">
-      <img alt="GitHub forks" src="https://img.shields.io/github/forks/MahmoudFettal/quote-generator?style=for-the-badge&logo=github&label=Forks"/>
+      <img alt="GitHub forks" src="https://img.shields.io/github/forks/MahmoudFettal/quote-generator?style=for-the-badge"/>
    </a> 
    <a href="https://github.com/MahmoudFettal/quote-generator/stargazers">
-      <img alt="GitHub stars" src="https://img.shields.io/github/stars/MahmoudFettal/quote-generator?style=for-the-badge&logo=github&label=Stars"/>
+      <img alt="GitHub stars" src="https://img.shields.io/github/stars/MahmoudFettal/quote-generator?style=for-the-badge"/>
    </a>
 <p>
 
