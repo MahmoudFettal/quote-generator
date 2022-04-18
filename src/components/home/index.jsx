@@ -14,7 +14,7 @@ function Home() {
   const get_quote = async () => {
     let res = await axios({
       method: "get",
-      url: "https://v6djp3d6azxsvvq4n3oxtaizlm0xsclc.lambda-url.eu-west-1.on.aws",
+      url: "https://quotes-api-smauj.azurewebsites.net/api/quoteAPI",
     });
     if (res.status === 200) {
       setQuote(res.data);
@@ -47,13 +47,13 @@ function Home() {
     <div className="grid justify-center w-full sm:w-128 relative">
       <div
         ref={quote_component}
-        className="grid justify-items-center bg-gray-700 rounded-xl  px-3 pt-4 pb-3 sm:py-5 sm:px-10"
+        className="grid justify-items-center bg-white rounded-xl  px-3 pt-4 pb-3 sm:py-5 sm:px-10 drop-shadow-2xl"
       >
-        <h2 className="text-xs sm:text-sm font-semibold text-lime-400 mt-4 text-center uppercase tracking-widest">
+        <h2 className="text-sm sm:text-md font-bold text-green-800 mt-4 text-center uppercase tracking-widest">
           Quote #{quote.id+1} - {quote.author}
         </h2>
         <hr className="hrAnimation" />
-        <p className="text-2xl text-white text-center mb-4">
+        <p className="text-2xl text-black text-center mb-4">
           "{quote.quote}"
         </p>
       </div>
@@ -61,7 +61,7 @@ function Home() {
         <div className="flex gap-7">
           <button
             onClick={downloadPng}
-            className="text-center w-fit h-fit text-white bg-lime-500 p-3 text-xl rounded-full"
+            className="text-center w-fit h-fit text-white bg-green-800 p-3 text-xl rounded-full"
           >
             <FiDownloadCloud />
           </button>
@@ -70,7 +70,7 @@ function Home() {
               get_quote();
               setRelaod(!reload);
             }}
-            className="text-center w-fit h-fit text-white bg-lime-500 p-3 text-xl rounded-full"
+            className="text-center w-fit h-fit text-white bg-green-800 p-3 text-xl rounded-full"
           >
             <HiOutlineRefresh className={reload ? "refresh1" : "refresh2"} />
           </button>
