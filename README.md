@@ -30,7 +30,7 @@
 <p>
 Welcome 👋👋 to quote generator 
 
-The app does what its name says it generates a random quote and displays it and also gives the user the option to download it, the app was made using react and tailwind for the frontend, and uses an Azure function to get the quotes data (during the creation of the app I used also fast API to test the app locally and you can find it in the [fast-quote-api](https://github.com/MahmoudFettal/quote-generator/tree/master/fast-quote-api) file).
+The app does what its name says, it generates a random quote and displays it and also gives the user the option to download it, the app was made using react and tailwind for the frontend, and uses an Azure function to get the quotes data (during the creation of the app I used also fast API to test the app locally and you can find it in the [fast-quote-api](https://github.com/MahmoudFettal/quote-generator/tree/master/fast-quote-api) file).
   
 The quotes were generated from a kaggle dateset and was cleaned using this [notebook](https://github.com/MahmoudFettal/quote-generator/blob/master/quotes-dataset/qoutes_cleaning.ipynb) .
 </p>
